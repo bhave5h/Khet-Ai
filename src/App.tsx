@@ -9,6 +9,8 @@ import YieldPrediction from "./pages/YieldPrediction";
 import FertilizerSuggestion from "./pages/FertilizerSuggestion";
 import PriceEstimation from "./pages/PriceEstimation";
 import DiseaseDetection from "./pages/DiseaseDetection";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/fertilizer-suggestion" element={<FertilizerSuggestion />} />
           <Route path="/price-estimation" element={<PriceEstimation />} />
           <Route path="/disease-detection" element={<DiseaseDetection />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

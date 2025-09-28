@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { Sprout, Menu, X } from "lucide-react";
+import { Sprout, Menu, X, User } from "lucide-react";
 import { useState } from "react";
 
 export function Navbar() {
@@ -44,6 +44,21 @@ export function Navbar() {
         <div className="flex items-center space-x-2">
           <ThemeToggle />
           
+          {/* Profile/Auth Buttons */}
+          <div className="hidden md:flex items-center space-x-2">
+            <Button variant="ghost" asChild>
+              <Link to="/login">Sign In</Link>
+            </Button>
+            <Button asChild>
+              <Link to="/signup">Sign Up</Link>
+            </Button>
+          </div>
+          
+          {/* Profile Icon for authenticated users (placeholder) */}
+          <Button variant="ghost" size="icon" className="hidden">
+            <User className="h-5 w-5" />
+          </Button>
+          
           {/* Mobile Menu Button */}
           <Button
             variant="ghost"
@@ -71,6 +86,25 @@ export function Navbar() {
                 <Link to={item.path}>{item.name}</Link>
               </Button>
             ))}
+            
+            {/* Mobile Auth Buttons */}
+            <div className="pt-4 border-t space-y-2">
+              <Button 
+                variant="ghost" 
+                asChild 
+                className="w-full justify-start"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Link to="/login">Sign In</Link>
+              </Button>
+              <Button 
+                asChild 
+                className="w-full justify-start"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Link to="/signup">Sign Up</Link>
+              </Button>
+            </div>
           </div>
         </div>
       )}
