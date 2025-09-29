@@ -1,7 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Sprout, Menu, X, User } from "lucide-react";
+import { Menu, X, User } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 export function Navbar() {
   const location = useLocation();
@@ -21,7 +22,7 @@ export function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <div className="flex items-center space-x-2">
-            <Sprout className="h-6 w-6 text-primary" />
+            <img src={logo} alt="Khet AI Logo" className="h-8 w-8" />
             <span className="text-xl font-bold gradient-text">Khet AI</span>
           </div>
         </Link>
