@@ -8,70 +8,6 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 50 20% 98%;
-    --foreground: 120 25% 15%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 120 25% 15%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 120 25% 15%;
-
-    --primary: 120 65% 35%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 75 35% 85%;
-    --secondary-foreground: 120 25% 15%;
-
-    --muted: 60 15% 95%;
-    --muted-foreground: 120 10% 45%;
-
-    --accent: 45 85% 65%;
-    --accent-foreground: 120 25% 15%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 120 15% 88%;
-    --input: 120 15% 92%;
-    --ring: 120 65% 35%;
-
-    /* Custom agricultural theme colors */
-    --farm-green: 120 65% 35%;
-    --farm-green-light: 120 45% 55%;
-    --farm-earth: 35 45% 65%;
-    --farm-sky: 200 85% 85%;
-    --farm-sun: 45 95% 70%;
-    
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--farm-green-light)));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted)));
-    --gradient-sky: linear-gradient(180deg, hsl(var(--farm-sky)), hsl(var(--background)));
-    
-    /* Shadows */
-    --shadow-soft: 0 4px 20px -2px hsl(var(--primary) / 0.1);
-    --shadow-card: 0 8px 25px -5px hsl(var(--primary) / 0.15);
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
     --background: 120 15% 8%;
     --foreground: 120 10% 90%;
 
@@ -100,21 +36,24 @@ All colors MUST be HSL.
     --input: 120 10% 18%;
     --ring: 120 55% 45%;
 
-    /* Dark theme agricultural colors */
+    /* Agricultural theme colors */
     --farm-green: 120 55% 45%;
     --farm-green-light: 120 45% 35%;
     --farm-earth: 35 35% 45%;
     --farm-sky: 200 25% 25%;
     --farm-sun: 45 85% 60%;
     
-    /* Dark gradients */
+    /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--farm-green-light)));
     --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--muted)));
     --gradient-sky: linear-gradient(180deg, hsl(var(--farm-sky)), hsl(var(--background)));
     
-    /* Dark shadows */
+    /* Shadows */
     --shadow-soft: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
     --shadow-card: 0 8px 25px -5px hsl(0 0% 0% / 0.4);
+
+    --radius: 0.5rem;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

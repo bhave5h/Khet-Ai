@@ -1,6 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { Sprout, Menu, X, User } from "lucide-react";
 import { useState } from "react";
 
@@ -42,7 +41,7 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center space-x-2">
-          <ThemeToggle />
+          
           
           {/* Profile/Auth Buttons */}
           <div className="hidden md:flex items-center space-x-2">
