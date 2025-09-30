@@ -15,8 +15,7 @@ export default function CropRecommendation() {
     temperature: "",
     humidity: "",
     ph: "",
-    rainfall: "",
-    location: ""
+    rainfall: ""
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -154,27 +153,6 @@ export default function CropRecommendation() {
                     </div>
                   </div>
 
-                  {/* Location */}
-                  <div className="space-y-2">
-                    <Label htmlFor="location">Location/State</Label>
-                    <Select value={formData.location} onValueChange={(value) => setFormData({...formData, location: value})}>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select your state" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="punjab">Punjab</SelectItem>
-                        <SelectItem value="haryana">Haryana</SelectItem>
-                        <SelectItem value="up">Uttar Pradesh</SelectItem>
-                        <SelectItem value="maharashtra">Maharashtra</SelectItem>
-                        <SelectItem value="karnataka">Karnataka</SelectItem>
-                        <SelectItem value="kerala">Kerala</SelectItem>
-                        <SelectItem value="tamil-nadu">Tamil Nadu</SelectItem>
-                        <SelectItem value="gujarat">Gujarat</SelectItem>
-                        <SelectItem value="rajasthan">Rajasthan</SelectItem>
-                        <SelectItem value="mp">Madhya Pradesh</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
 
                   <Button type="submit" variant="hero" className="w-full" size="lg">
                     Get Crop Recommendation
